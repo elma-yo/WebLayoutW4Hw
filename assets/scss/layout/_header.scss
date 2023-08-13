@@ -1,4 +1,22 @@
-.header{
-  background: #69F0AE;
+.headerNav{
+  background: $primary;
   font-size: 64px;
+
+  h1 a{
+    background-image: url(../images/logo.png);
+    width: 80px;
+    height: 48.57px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 16px 0;
+  }
+  
+  ul li a {
+    display: block;
+    color: $white;
+    font-size: 20px;
+    margin-left: 30px;
+  }
 }
