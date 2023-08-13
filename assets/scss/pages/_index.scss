@@ -88,3 +88,46 @@ a {
     margin-bottom: 8px;
   }
 }
+
+.co-branded {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+
+  padding: 80px 0;
+
+  .title {
+    color: $secondary;
+  }
+
+  a h3 {
+    background-color: $secondary;
+  }
+}
+
+.customer-recommends {
+  padding: 80px 0;
+  color: black;
+
+  h3 {
+    margin-bottom: 48px;
+  }
+
+  .card {
+    width: 306px;
+    height: 511px;
+    box-shadow: 0px 2px 6px #00000029;
+  }
+
+  .text-area {
+    padding: 16px;
+    height: 205px;
+  }
+
+  .name {
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  span {
+    color: #707070;
+  }
+}
