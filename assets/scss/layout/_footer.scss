@@ -1,4 +1,56 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+footer{
+  background-color: $primary;
+  color: $secondary;
+
+  .container {
+    padding: 48px 0 32px 0;
+  }
+
+  a {
+    display: block;
+    color: $secondary;
+  }
+
+  .nav {
+    margin-bottom: 24px;
+    
+    .link li a {
+      margin-right: 48px;
+    }
+  
+    .icons li a {
+      width: 48px;
+      height: 48px;
+      margin-left: 32px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .contact {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid white;
+
+    .tel {
+      margin-bottom: 8px;
+    }
+
+    span, p {
+      font-size: 36px;
+    }
+
+    span {
+      display: block;
+      margin-right: 22px;
+      font-weight: bold;
+    }
+  }
+
+  .policy {
+    ul li {
+      margin-left: 48px;
+    }
+  }
 }
