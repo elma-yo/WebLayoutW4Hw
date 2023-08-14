@@ -135,9 +135,9 @@
 .contact {
   background-color: $bg-color;
   padding: 80px 0;
-  
-  .container {
-    max-width: 49%;
+  .form-box {
+    width: 49%;
+    margin: 0 auto;
   }
 
   h3 {
