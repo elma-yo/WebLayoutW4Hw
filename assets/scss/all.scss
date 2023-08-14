@@ -3,7 +3,9 @@
 
 @import './body';
 @import './container.scss';
-@import './display.scss';
+
+@import './utilities/display.scss';
+@import './utilities/flex.scss';
 
 @import './layout/header.scss';
 @import './layout/footer.scss';

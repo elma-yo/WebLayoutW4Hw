@@ -12,11 +12,44 @@
     white-space: nowrap;
     margin: 16px 0;
   }
+
+  li {
+    margin-left: 30px;
+  }
   
-  ul li a {
+  a {
     display: block;
     color: $secondary;
     font-size: 20px;
-    margin-left: 30px;
   }
+}
+
+// phone 手機
+@media(max-width:767px){
+  .headerNav {
+    .container {
+      padding: 0;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      h1 {
+        padding: 0 12px;
+      }
+    }
+    ul {
+      width: 100%;
+      flex-wrap: wrap;
+      font-style: 16px;
+      text-align: center;
+    }
+    li {
+      margin-left: 0;
+      width: 50%;
+      border: 1px solid $secondary;
+    }
+    a {
+      padding: 12px 0;
+    }
+  }
+  
 }
