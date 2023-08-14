@@ -1,5 +1,6 @@
 .stores {
-    padding: 96px 0 80px 0;
+    padding-top: 96px;
+    padding-bottom: calc(80px - 48px);
 
     h3 {
         padding-left: 16px;
@@ -10,7 +11,7 @@
     .select-box {
         margin-bottom: 40px;
         span {
-            display: block;
+            // display: block;
             margin-right: 16px;
             font-size: 24px;
             color: black;
@@ -30,16 +31,16 @@
         }
         .select-wrapper {
             position: relative;
-          }
-          
-          .select-wrapper::after {
-            content: "▾";
-            font-size: 1rem;
-            color: black;
-            top: 6px;
-            right: 19px;
-            position: absolute;
-          }
+        }
+        
+        .select-wrapper::after {
+        content: "▾";
+        font-size: 1rem;
+        color: black;
+        top: 6px;
+        right: 19px;
+        position: absolute;
+        }
     }
     
     .card {
@@ -56,6 +57,7 @@
 
     .info-box {
         padding: 16px 26px;
+        border: 1px solid #00000020;
     }
 
     .info {
@@ -67,7 +69,8 @@
 
     a {
         display: block;
-        padding: 16px 170px;
+        padding: 16px 0;
+        text-align: center;
         background-color: black;
         font-size: 19px;
         color: $secondary;
@@ -78,5 +81,45 @@
     }
     .mr-24 {
         margin-right: 24px;
+    }
+}
+
+// tablet 平板
+@media(max-width:992px){
+    .stores {
+        padding-top: 80px;
+        padding-bottom: calc(80px - 24px);
+
+        .card {
+            width: 48%;
+            margin-bottom: 24px;
+        }
+        .null {
+            display: none;
+        }
+    }
+}
+
+// phone 手機
+@media(max-width:767px){
+    .stores {
+        padding-top: 40px;
+        padding-bottom: calc(64px - 24px);
+
+        .select-box {
+            span {
+                font-size: 16px;
+                margin-right: 8px;
+            }
+            .select-wrapper {
+                width: calc(100% - 72px);
+            }
+            select {
+                width: 100%;
+            }
+        }
+        .card {
+            width: 100%;
+        }
     }
 }
