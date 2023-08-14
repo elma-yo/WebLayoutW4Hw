@@ -1,14 +1,17 @@
 footer{
   background-color: $primary;
   color: $secondary;
-
-  .container {
-    padding: 48px 0 32px 0;
-  }
+  padding: 48px 0 32px 0;
 
   a {
     display: block;
     color: $secondary;
+  }
+
+  .content {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid white;
   }
 
   .nav {
@@ -18,21 +21,14 @@ footer{
       margin-right: 48px;
     }
   
-    .icons li a {
+    .icons a {
       width: 48px;
       height: 48px;
       margin-left: 32px;
-      img {
-        width: 100%;
-      }
     }
   }
 
   .telAndEmail {
-    margin-bottom: 32px;
-    padding-bottom: 32px;
-    border-bottom: 1px solid white;
-
     .tel {
       margin-bottom: 8px;
     }
@@ -49,8 +45,54 @@ footer{
   }
 
   .policy {
-    ul li {
+    li {
       margin-left: 48px;
+    }
+  }
+}
+
+// phone 手機
+@media(max-width:767px) {
+  footer {
+    padding-top: 24px;
+    padding-bottom: 16px;
+    .content {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      padding-bottom: 24px;
+      margin-bottom: 16px;
+    }
+    .link {
+      display: none;
+    }
+    .nav {
+      .icons a {
+        width: 24px;
+        height: 24px;
+        margin-left: 8px;
+      }
+    }
+    .telAndEmail {
+      span {
+        font-size: 24px;
+        margin-right: 11px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    .policy {
+      flex-direction: column;
+      p, li {
+        margin-bottom: 8px;
+      }
+      ul {
+        flex-direction: column;
+      }
+      li {
+        margin-left: 0;
+      }
     }
   }
 }
