@@ -1,0 +1,84 @@
+.stores {
+    padding: 96px 0 80px 0;
+
+    h3 {
+        padding-left: 16px;
+        margin-bottom: 33px;
+        border-left: 8px solid $primary;
+        text-align: left;
+    }
+    
+    .select-box {
+        margin-bottom: 40px;
+        span {
+            display: block;
+            margin-right: 16px;
+            font-size: 24px;
+            color: black;
+        }
+
+        select {
+            -webkit-appearance: none;
+            appearance: none;
+            display: block;
+            width: 304px;
+            height: 38px;
+            padding: 6px 12px;
+            border: 1px solid #CED4DA;
+            font-size: 18px;
+            line-height: 26px;
+            color: #495057;
+        }
+        .select-wrapper {
+            position: relative;
+          }
+          
+          .select-wrapper::after {
+            content: "▾";
+            font-size: 1rem;
+            color: black;
+            top: 6px;
+            right: 19px;
+            position: absolute;
+          }
+    }
+    
+    .card {
+        margin-bottom: 48px;
+        width: 416px;
+        color: #212529;
+
+        h4 {
+            padding: 8px 24px;
+            border: 1px solid #00000020;
+            font-weight: 400;
+            text-align: left;
+        }
+    }
+
+    .info-box {
+        padding: 16px 26px;
+    }
+
+    .info {
+        span {
+            margin-right: 11px;
+            font-size: 18px;
+        }
+    }
+
+    a {
+        display: block;
+        padding: 16px 170px;
+        background-color: black;
+        font-size: 19px;
+        color: $secondary;
+    }
+
+    .mb-8 {
+        margin-bottom: 8px;
+    }
+    .mr-24 {
+        margin-right: 24px;
+    }
+}
