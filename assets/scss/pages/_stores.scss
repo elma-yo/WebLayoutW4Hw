@@ -5,7 +5,6 @@
         padding-left: 16px;
         margin-bottom: 33px;
         border-left: 8px solid $primary;
-        text-align: left;
     }
     
     .select-box {
@@ -45,14 +44,13 @@
     
     .card {
         margin-bottom: 48px;
-        width: 416px;
+        width: 32%;
         color: #212529;
 
         h4 {
             padding: 8px 24px;
             border: 1px solid #00000020;
             font-weight: 400;
-            text-align: left;
         }
     }
 
